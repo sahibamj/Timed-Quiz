@@ -1,0 +1,75 @@
+#Timeleft{
+text-align: right;
+font-family: Georgia, Serif;
+color: #006699;
+}
+
+#Highscore{
+    font-family: Georgia, Serif;
+    color: #006699;
+}
+
+#start-button{
+    font-family: Georgia, Serif;
+    color: #004466;
+}
+
+
+.container{
+    margin: auto;
+    padding: 30px;
+    height: 100px;
+    
+    
+  }
+
+.container2{
+    margin: 15px;
+    padding: 25px;
+    height: 100px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container3{
+    display: none;
+    margin: 15px;
+    padding: 25px;
+    height: 100px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+.answers{
+    background-color: #cccccc;
+    text-align: center;
+}
+
+.list-group-item{
+    background-color: #cccccc;
+}
+#q1answers{
+    display: none;
+}
+
+#q2answers{
+    display: none;
+}
+
+#q3answers{
+    display: none;
+}
+
+#q4answers{
+    display: none;
+}
+
+#q5answers{
+    display: none;
+}
+
+.questions{
+    font-size: 30px;
+    text-align: center;
+}
+

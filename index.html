@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!--Start-Time-Score-font-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!--question-answer-font-->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Timed Quiz</title>
+</head>
+
+<section class="container">
+    <section class="row">
+
+        <section class="col-md-6">
+            <h3 id="Highscore">Score</h2>
+        </section>
+
+        <section class="col-md-6">
+            <h3 id="Timeleft">Time Left</h2>
+        </section>
+
+    </section>
+
+    <section class="row">
+        <section id="start-button" class="col-sm-12">
+
+            <button type="button" class="btn btn-secondary btn-lg btn-block">Start Quiz</button>
+
+        </section>
+    </section>
+</section>
+
+<section class="container2">
+    <section class="questions"></section>
+
+
+
+    <section class="answers">
+
+        <section id="q1answers" class="list-group">
+            <button id="A1button" type="button" class="list-group-item list-group-item-action">
+                Pick 1 correct Answer:
+            </button>
+            <button id="A11" onclick="startRead()" type="button" class="list-group-item list-group-item-action">A. JavaScript is a stripped-down version of Java</button>
+            <button id="A12" onclick="startRead()" type="button" class="list-group-item list-group-item-action">B. JavaScript's syntax is loosely based on Java's</button>
+            <button id="A13" onclick="startRead()" type="button" class="list-group-item list-group-item-action">C. They both originated on the island of Java</button>
+            <button id="A14" onclick="startRead()" type="button" class="list-group-item list-group-item-action">D. None of the above</button>
+        </section>
+
+        <section id="q2answers" class="list-group">
+            <button id="A2button" type="button" class="list-group-item list-group-item-action">
+                Pick 1 correct Answer:
+            </button>
+            <button id="A21" onclick="readNow()" type="button" class="list-group-item list-group-item-action">A. The User's machine running a Web browser</button>
+            <button id="A22" onclick="readNow()" type="button" class="list-group-item list-group-item-action">B. The Web server</button>
+            <button id="A23" onclick="readNow()" type="button" class="list-group-item list-group-item-action">C. A central machine deep within Netscape's corporate offices</button>
+            <button id="A24" onclick="readNow()" type="button" class="list-group-item list-group-item-action">D. None of the above</button>
+        </section>
+
+        <section id="q3answers" class="list-group">
+            <button id="A3button" type="button" class="list-group-item list-group-item-action">
+                Pick 1 correct Answer:
+            </button>
+            <button id="A31" onclick="readMe()" type="button" class="list-group-item list-group-item-action">A. Microsoft</button>
+            <button id="A32" onclick="readMe()" type="button" class="list-group-item list-group-item-action">B. Navigator</button>
+            <button id="A33" onclick="readMe()" type="button" class="list-group-item list-group-item-action">C. LiveWire</button>
+            <button id="A34" onclick="readMe()" type="button" class="list-group-item list-group-item-action">D. Native</button>
+        </section>
+
+        <section id="q4answers" class="list-group">
+            <button id="A4button" type="button" class="list-group-item list-group-item-action">
+                Pick 1 correct Answer:
+            </button>
+            <button id="A41" onclick="readingNow()" type="button" class="list-group-item list-group-item-action">A. Microsoft</button>
+            <button id="A42" onclick="readingNow()" type="button" class="list-group-item list-group-item-action">B. Navigator</button>
+            <button id="A43" onclick="readingNow()" type="button" class="list-group-item list-group-item-action">C. LiveWire</button>
+            <button id="A44" onclick="readingNow()" type="button" class="list-group-item list-group-item-action">D. Native</button>
+        </section>
+
+        <section id="q5answers" class="list-group">
+            <button id="A5button" type="button" class="list-group-item list-group-item-action">
+                Pick 1 correct Answer:
+            </button>
+            <button id="A51" onclick="readingFunc()" type="button" class="list-group-item list-group-item-action">A. Storing numbers, dates, or other values</button>
+            <button id="A52" onclick="readingFunc()" type="button" class="list-group-item list-group-item-action">B. Varying randomly</button>
+            <button id="A53" onclick="readingFunc()" type="button" class="list-group-item list-group-item-action">C. Causing high-school algebra flashbacks</button>
+            <button id="A54" onclick="readingFunc()" type="button" class="list-group-item list-group-item-action">D. None of the above</button>
+        </section>
+
+    </section>
+
+<section class="container3">
+    <section class="input-group">
+        <section class="input-group-prepend">
+          <span class="input-group-text">First and last name</span>
+        </section>
+        <input type="text" aria-label="First name" class="form-control">
+        <input type="text" aria-label="Last name" class="form-control">
+    </section>
+</section>
+
+
+    <script src="script.js"></script>
+    </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+
+</html>
